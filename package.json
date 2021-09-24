@@ -1,15 +1,23 @@
 {
-  "name": "test",
-  "version": "0.0.0",
+  "name": "awesome-slider-auth-doc",
+  "version": "1.0.0",
+  "description": "awesome-slider-auth说明文档",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build"
+    "dev": "vitepress dev docs --open",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "keywords": [
+    "awesome-slider-auth",
+    "vue"
+  ],
+  "author": "jinxin",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "^0.19.1"
   },
   "dependencies": {
-    "vue": "^3.0.4"
-  },
-  "devDependencies": {
-    "vite": "^1.0.0-rc.13",
-    "@vue/compiler-sfc": "^3.0.4"
+    "quick.run": "^1.0.8"
   }
 }
