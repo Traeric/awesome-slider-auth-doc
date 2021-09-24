@@ -18,17 +18,25 @@ module.exports = {
     // 主题配置
     themeConfig: {
         logo: "/logo.png",
+        // lastUpdated: 'Last Updated',
         // 启动页面丝滑滚动
         smoothScroll: true,
         // 头部导航
         nav: [
             { text: '首页', link: '/' },
             { text: '教程', link: '/document/' },
+            {
+                text: "更多选项",
+                items: [
+                    { text : '项目地址', link: 'https://github.com/Traeric/awesome-slider-auth' },
+                    { text : '关注作者', link: 'https://github.com/Traeric' }
+                ],
+            }
         ],
         //   侧边导航
         sidebar: {
             '/document/': [
-                { text: '介绍', link: '/document/' },
+                { text: '安装', link: '/document/' },
                 { text: '快速开始', link: '/document/quick_start/' },
                 { 
                     text: '人机校验',
@@ -39,5 +47,8 @@ module.exports = {
                 },
             ]
         }
+    },
+    markdown: {
+        lineNumbers: true,
     }
 }

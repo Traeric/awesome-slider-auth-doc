@@ -15,9 +15,11 @@
   "author": "jinxin",
   "license": "ISC",
   "devDependencies": {
+    "less": "^4.1.1",
     "vitepress": "^0.19.1"
   },
   "dependencies": {
-    "quick.run": "^1.0.8"
+    "awesome-slider-auth": "^2.0.1",
+    "quick-plugin-md": "^0.1.2"
   }
 }

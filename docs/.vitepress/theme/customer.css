@@ -1,8 +1,21 @@
 .nav-bar-title {
-    line-height: 50px !important;
+    line-height: 25px !important;
 }
 .nav-bar-title .logo {
-    width: 50px;
-    height: 50px !important;
+    width: 25px;
+    height: 25px !important;
     margin: 0 !important;
 }
+
+.page .container {
+    margin-left: 50px !important;
+}
+
+.nav-bar {
+    z-index: 2000 !important;
+}
+
+.code-search-btn {
+    font-style: normal !important;
+}
+
