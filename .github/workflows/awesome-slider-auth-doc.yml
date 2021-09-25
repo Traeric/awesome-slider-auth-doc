@@ -1,19 +1,34 @@
-name: Awesome Slider Auth Doc Publish Action
+name: Awesome Slider Auth Publish Action
+
+# 触发条件：在 push 到 main 分支后
 on:
   push:
     branches:
       - main
+
+# 任务
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@main
+      - name: Checkout   # 下载代码到服务器
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
 
-    - name: Build and Deploy
-      uses: JamesIves/github-pages-deploy-action@dev
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: build
-        BUILD_SCRIPT: npm install && npm run build
+      - name: install
+        run: npm install 
+
+      - name: Build
+        run:  npm run build
+      # 创建代码发布目录
+      - name: makedir
+        run: mkdir -p /home/runner/work/awesome-slider-auth-doc/awesome-slider-auth-doc/public
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}   # 保存在项目的settings/Secrets中 需要生成token再设置到项目中
+          BRANCH: gh_pages
+          FOLDER: public
+
