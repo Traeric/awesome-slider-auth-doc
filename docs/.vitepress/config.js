@@ -11,7 +11,7 @@ module.exports = {
             'link',
             {
                 rel: 'icon',
-                href: '/linktolink.png',//图片放在public文件夹下
+                href: '/awesome-slider-auth-doc/linktolink.png',//图片放在public文件夹下
             },
         ],
     ],
