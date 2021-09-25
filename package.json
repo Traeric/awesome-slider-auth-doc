@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "awesome-slider-auth说明文档",
   "main": "index.js",
+  "homepage": "https://Traeric.github.io/awesome-slider-auth-doc",
   "scripts": {
-    "dev": "vitepress dev docs --open",
+    "dev": "vitepress dev docs --port 3001",
     "build": "vitepress build docs",
     "serve": "vitepress serve docs"
   },
@@ -19,7 +20,7 @@
     "vitepress": "^0.19.1"
   },
   "dependencies": {
-    "awesome-slider-auth": "^2.0.1",
+    "awesome-slider-auth": "^2.0.2",
     "quick-plugin-md": "^0.1.2"
   }
 }
