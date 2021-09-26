@@ -1,6 +1,17 @@
-<img src="./public/logo.png"  height="300" width="300" style="margin-top: 100px;">
-
-# AwesomeSliderAuth
-一款前端人机校验组件，开箱即用。
-* [fork me on github](https://github.com/Traeric/awesome-slider-auth)
-* [关注作者，点个关注吧~](https://github.com/Traeric)
+---
+home: true
+heroImage: /logo.png
+heroAlt: Logo image
+heroText: Awesome Slider Auth 2.0.1
+tagline: 一款便捷的人机校验组件，开箱即用。
+actionText: Get Started
+actionLink: /document/
+features:
+  - title: Simplicity First
+    details: Minimal setup with markdown-centered project structure helps you focus on writing.
+  - title: Vue-Powered
+    details: Enjoy the dev experience of Vue + webpack, use Vue components in markdown, and develop custom themes with Vue.
+  - title: Performant
+    details: VitePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
+footer: ISC Licensed | Copyright © 2021-present Eric Jin
+---
