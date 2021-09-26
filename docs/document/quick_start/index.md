@@ -1,5 +1,5 @@
 # 快速开始
-本节介绍如何咋子项目中使用AwesomeSliderAuth。
+本节介绍如何在项目中使用AwesomeSliderAuth。
 
 ## 引入AwesomeSliderAuth
 在main.js中写入以下内容：
