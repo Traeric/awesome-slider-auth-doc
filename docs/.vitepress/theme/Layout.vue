@@ -5,7 +5,7 @@
       <SearchBar @onEvent="SearchEvent" />
     </template> -->
     <template #navbar-search>
-      <SearchBar @onEvent="SearchEvent" />
+      <SearchBar @onEvent="SearchEvent" :words="keywords" />
     </template>
   </Layout>
   <!-- <Content /> make sure to include markdown outlet -->
@@ -19,6 +19,8 @@ import { useRouter, useData } from 'vitepress'
 //import theme from 'vitepress/dist/client/theme-default/index.js';
 import DefaultTheme from 'vitepress/theme';
 const Layout = DefaultTheme.Layout
+
+import keywords from "../../../keywords.json";
 
 //const { theme } = useData()
 //import Layout from 'vitepress/dist/client/theme-default/Layout.vue';
@@ -63,7 +65,7 @@ export default {
     });
 
 
-    return { SearchEvent }
+    return { SearchEvent, keywords }
   }
 }
 </script>

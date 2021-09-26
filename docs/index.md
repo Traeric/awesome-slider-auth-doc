@@ -4,7 +4,7 @@ heroImage: /logo.png
 heroAlt: Logo image
 heroText: Awesome Slider Auth 2.0.1
 tagline: 一款便捷的人机校验组件，开箱即用。
-actionText: Get Started
+actionText: 快速开始
 actionLink: /document/
 features:
   - title: Simplicity First
