@@ -22,3 +22,18 @@
     font-size: 12px !important;
 }
 
+
+.code-search-bar {
+    height: 35px;
+}
+
+.code-search-bar .code-search-input {
+    line-height: 23px;
+    width: 0% !important;
+    padding: 0 !important;
+}
+
+.code-search-bar .code-search-btn {
+    line-height: 24px;
+    width: 100% !important;
+}

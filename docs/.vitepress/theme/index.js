@@ -1,5 +1,6 @@
 import CustomerTheme from 'vitepress/theme'
 import './customer.css'
+import './customer.js';
 import startup from './startup';
 import Layout from './Layout.vue';
 

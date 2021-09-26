@@ -41,6 +41,26 @@ export default {
       router.go(_url);
     };
 
+    onMounted(() => {
+      let buttonList = document.getElementsByClassName("code-search-btn");
+      if (buttonList != null && buttonList != undefined && buttonList.length > 0) {
+          buttonList[0].addEventListener("click", () => {
+              let inputList = document.getElementsByClassName('code-search-input');
+              if (inputList !== null && inputList !== undefined && inputList.length > 0) {
+                inputList[0].style.cssText = `
+                  width: 75% !important;
+                  transition: all 1s;
+                  padding: .3rem !important;
+                `;
+
+                buttonList[0].style.cssText = `
+                  width: 25% !important;
+                  transition: width 1s;
+                `;
+              }
+          });
+      }
+    });
 
 
     return { SearchEvent }
