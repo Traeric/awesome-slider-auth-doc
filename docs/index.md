@@ -7,11 +7,11 @@ tagline: 一款便捷的人机校验组件，开箱即用。
 actionText: 快速开始
 actionLink: /document/
 features:
-  - title: Simplicity First
-    details: Minimal setup with markdown-centered project structure helps you focus on writing.
-  - title: Vue-Powered
-    details: Enjoy the dev experience of Vue + webpack, use Vue components in markdown, and develop custom themes with Vue.
-  - title: Performant
-    details: VitePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
+  - title: 简易使用
+    details: AwesomeSliderAuth内置了多种前端解决方案，在没有任何后端支持时仍能够快速使用。
+  - title: 配置简单
+    details: AwesomeSliderAuth秉承约定大于配置的原则，尽可能减少配置数量，为使用者减轻心智负担，能全身心的投入业务代码的编写。
+  - title: 小巧方便
+    details: AwesomeSliderAuth非常小，功能精简，没有冗余。
 footer: ISC Licensed | Copyright © 2021-present Eric Jin
 ---
