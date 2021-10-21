@@ -4,6 +4,7 @@ import './customer.js';
 import startup from './startup';
 import Layout from './Layout.vue';
 import NotFound from "./NotFound.vue";
+import "awesome-slider-auth/packages/Style/index.css";
 
 
 export default {

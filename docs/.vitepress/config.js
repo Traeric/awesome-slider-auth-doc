@@ -43,6 +43,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         { text: '滑动拼图认证', link: '/document/slider/default_slider/' },
+                        { text: '滑动滑块认证', link: '/document/slider/simple_slider/' },
                     ] 
                 },
             ]
