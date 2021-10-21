@@ -6,8 +6,9 @@
 ```js
 import { createApp } from 'vue'
 import App from './App.vue'
-import './index.css'
 import awesomeSliderAuth from 'awesome-slider-auth';
+// 注意awesome-slider-auth的样式文件需要单独引用
+import "awesome-slider-auth/packages/Style/index.css";
 
 createApp(App)
 .use(awesomeSliderAuth)
