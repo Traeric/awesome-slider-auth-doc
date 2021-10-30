@@ -42,3 +42,71 @@
     line-height: 24px;
     width: 100% !important;
 }
+
+.model-bind {
+    border: 1px solid #dcdfe6;
+    padding: 10px 12px;
+    border-radius: 4px;
+}
+
+.model-bind .as-row {
+    margin: 20px 0 20px 0;
+}
+
+.model-bind .as-row .as-button-wrap {
+    margin-left: 10px;
+}
+
+.model-bind .flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* 字体图标展示样式 */
+.icon-gather {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    overflow: hidden;
+    border-top: 1px solid #dcdfe6;
+    border-left: 1px solid #dcdfe6;
+    box-sizing: border-box;
+}
+
+.icon-gather .icon-item {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #dcdfe6;
+    border-right: 1px solid #dcdfe6;
+    padding: 20px;
+    cursor: pointer;
+    color: #606266;
+}
+
+.icon-gather .icon-item:hover {
+    color: #3eaf7c;
+    background-color: rgba(62, 175, 124, .1);
+}
+
+.icon-gather .icon-item i {
+    font-size: 22px;
+}
+
+.icon-gather .icon-item .tips {
+    color: #409EFF;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.icon-gather .icon-item .icon-text {
+    width: 100px;
+    text-align: center;
+}
+
+.icon-gather .icon-item i {
+    margin-bottom: 10px;
+}

@@ -28,7 +28,6 @@ import keywords from "../../../keywords.json";
 export default {
   components: { Layout },
   setup () {
-
     // const { siteData } = useSiteData()
     const { site } = useData()
 
@@ -62,10 +61,45 @@ export default {
               }
           });
       }
+
+      fontClick();
     });
 
 
     return { SearchEvent, keywords }
+  }
+}
+
+/**
+ * 字体图标点击复制
+ */
+function fontClick() {
+  let fontItems = document.getElementsByClassName("icon-item");
+  for (let i = 0; i < fontItems.length; i++) {
+    fontItems[i].addEventListener("click", e => {
+      // 获取所点击的字体类名
+      let fontClassName = e.currentTarget.children[1].innerText;
+      if (!fontClassName) {
+        return;
+      }
+      // 复制数据到剪切板
+      const cInput = document.createElement('input');
+      cInput.value = fontClassName;
+      document.body.appendChild(cInput);
+      cInput.select() // 选取文本域内容;
+      // 执行浏览器复制命令
+      // 复制命令会将当前选中的内容复制到剪切板中（这里就是创建的input标签）
+      // Input要在正常的编辑状态下原生复制方法才会生效
+      document.execCommand('Copy')
+      // 复制成功后再将构造的标签 移除
+      cInput.remove();
+      // 提示复制成功
+      let tipDom = e.currentTarget.children[2];
+      tipDom.innerText = "已复制";
+      setTimeout(() => {
+        tipDom.innerText = "";
+      }, 2000);
+    });
   }
 }
 </script>

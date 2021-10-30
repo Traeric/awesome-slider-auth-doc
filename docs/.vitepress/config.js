@@ -42,9 +42,17 @@ module.exports = {
                     text: '人机校验',
                     collapsable: false,
                     children: [
-                        { text: '滑动拼图认证', link: '/document/slider/default_slider/' },
+                        { text: '滑动拼图认证', link: '/document/slider/puzzle_slider/' },
                         { text: '滑动滑块认证', link: '/document/slider/simple_slider/' },
                     ] 
+                },
+                {
+                    text: 'UI组件',
+                    collapsable: false,
+                    children: [
+                        {text: '按钮组件', link: '/document/ui/button/'},
+                        {text: '字体图标', link: '/document/ui/font_icons/'},
+                    ]
                 },
             ]
         }

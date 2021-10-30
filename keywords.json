@@ -24,7 +24,7 @@
             }
         ]
     },
-    "/document/slider/default_slider/": {
+    "/document/slider/puzzle_slider/": {
         "last":1629448061002,
         "children":[
             {
@@ -34,8 +34,8 @@
             },
             {
                 "level":2,
-                "title":"滑动拼图认证-自定义宽高",
-                "slug":"自定义宽高"
+                "title":"滑动拼图认证-刷新频率以及认证误差",
+                "slug":"刷新频率以及认证误差"
             },
             {
                 "level":2,
@@ -91,6 +91,56 @@
                 "level":3,
                 "title":"滑动滑块认证-API-属性",
                 "slug":"属性"
+            }
+        ]
+    },
+    "/document/ui/button/": {
+        "last":1629448061002,
+        "children":[
+            {
+                "level":2,
+                "title":"按钮组件-基础用法",
+                "slug":"基础用法"
+            },
+            {
+                "level":2,
+                "title":"按钮组件-图标按钮",
+                "slug":"图标按钮"
+            },
+            {
+                "level":2,
+                "title":"按钮组件-禁用按钮",
+                "slug":"禁用按钮"
+            },
+            {
+                "level":2,
+                "title":"按钮组件-加载按钮",
+                "slug":"加载按钮"
+            },
+            {
+                "level":3,
+                "title":"按钮组件-按钮尺寸",
+                "slug":"按钮尺寸"
+            },
+            {
+                "level":3,
+                "title":"按钮组件-API-属性",
+                "slug":"属性"
+            }
+        ]
+    },
+    "/document/ui/font_icons/": {
+        "last":1629448061002,
+        "children":[
+            {
+                "level":2,
+                "title":"字体图标-使用方式",
+                "slug":"使用方式"
+            },
+            {
+                "level":2,
+                "title":"字体图标-图标集合",
+                "slug":"图标集合"
             }
         ]
     }

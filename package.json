@@ -20,7 +20,7 @@
     "vitepress": "^0.19.1"
   },
   "dependencies": {
-    "awesome-slider-auth": "^2.0.3",
+    "awesome-slider-auth": "^2.0.4",
     "quick-plugin-md": "^0.1.2"
   }
 }
