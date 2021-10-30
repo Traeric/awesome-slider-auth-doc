@@ -12,8 +12,7 @@
 </template>
 <script>
 //import 'quick-plugin-md/dist/styles/index.css'
-import { onMounted, ref } from 'vue'
-import { html } from 'quick.lib'
+import { onMounted } from 'vue';
 import { useRouter, useData } from 'vitepress'
 //import Theme from '/@theme/index';
 //import theme from 'vitepress/dist/client/theme-default/index.js';
@@ -26,11 +25,12 @@ import keywords from "../../../keywords.json";
 //import Layout from 'vitepress/dist/client/theme-default/Layout.vue';
 
 export default {
-  components: { Layout },
+  components: { 
+    Layout 
+  },
   setup () {
     // const { siteData } = useSiteData()
     const { site } = useData()
-
     /** 路由 */
     const router = useRouter();
     /** 搜索事件触发 */
@@ -61,10 +61,7 @@ export default {
               }
           });
       }
-
-      fontClick();
     });
-
 
     return { SearchEvent, keywords }
   }
@@ -98,7 +95,7 @@ function fontClick() {
       tipDom.innerText = "已复制";
       setTimeout(() => {
         tipDom.innerText = "";
-      }, 2000);
+      }, 1500);
     });
   }
 }

@@ -8,6 +8,6 @@
 ```js
 npm i awesome-slider-auth
 ```
-::: tip
-安装完成后即可使用，如需知道使用方法，请阅读下一节：`快速开始`
+::: tip 使用
+安装完成后即可使用，如需知道使用方法，请阅读下一节：[快速开始](/document/quick_start/)
 :::

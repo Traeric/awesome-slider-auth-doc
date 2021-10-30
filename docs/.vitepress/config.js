@@ -1,6 +1,6 @@
 // vitepress/config.js
 module.exports = {
-    title: "Awesome Slider Auth 2.0.1",// 网站标题
+    title: "Awesome Slider Auth",// 网站标题
     description: 'AwesomeSliderAuth组件库说明文档', //网站描述
     base: '/awesome-slider-auth-doc/', //  部署时的路径 默认 /  可以使用二级地址 /base/
     // lang: 'en-US', //语言
