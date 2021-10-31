@@ -1,0 +1,1 @@
+import{_ as e,o as a,c as s,a as n}from"./app.ffc6f70e.js";const t='{"title":"安装","description":"","frontmatter":{},"headers":[{"level":2,"title":"npm安装","slug":"npm安装"}],"relativePath":"document/index.md","lastUpdated":1635670001031}',r={},p=[n('',6)];var d=e(r,[["render",function(e,n,t,r,d,i){return a(),s("div",null,p)}]]);export{t as __pageData,d as default};
