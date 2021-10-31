@@ -1,0 +1,1 @@
+import{_ as e,o as a,c as s,a as n}from"./app.b18fe991.js";const t='{"title":"安装","description":"","frontmatter":{},"headers":[{"level":2,"title":"npm安装","slug":"npm安装"}],"relativePath":"document/index.md","lastUpdated":1635670877985}',r={},p=[n('',6)];var d=e(r,[["render",function(e,n,t,r,d,i){return a(),s("div",null,p)}]]);export{t as __pageData,d as default};
