@@ -45,58 +45,31 @@ export default {
     onMounted(() => {
       let buttonList = document.getElementsByClassName("code-search-btn");
       if (buttonList != null && buttonList != undefined && buttonList.length > 0) {
-          buttonList[0].addEventListener("click", () => {
-              let inputList = document.getElementsByClassName('code-search-input');
-              if (inputList !== null && inputList !== undefined && inputList.length > 0) {
-                inputList[0].style.cssText = `
-                  width: 75% !important;
-                  transition: all 1s;
-                  padding: .3rem !important;
-                `;
-
-                buttonList[0].style.cssText = `
-                  width: 25% !important;
-                  transition: width 1s;
-                `;
-              }
-          });
+        buttonList[0].innerText = "";
+        buttonList[0].classList.add("iconfont");
+        buttonList[0].classList.add("icon-sousuo");
       }
+
+      let inputList = document.getElementsByClassName("code-search-input");
+      let barList = document.getElementsByClassName("code-search-bar");
+      if (inputList != null && inputList != undefined && inputList.length > 0) {
+        // 添加搜索边框样式
+        inputList[0].addEventListener("focus", () => {
+          barList[0].classList.add("code-search-bar-focused");
+        });
+
+        inputList[0].addEventListener("blur", () => {
+          barList[0].classList.remove("code-search-bar-focused");
+        });
+      }
+
+      // 调整搜索框的位置
+      let headDom = document.getElementsByClassName("nav-bar")[0];
+      let searchDom = document.getElementsByClassName("code-search-bar")[0];
+      headDom.insertBefore(searchDom, headDom.childNodes[3]);
     });
 
     return { SearchEvent, keywords }
-  }
-}
-
-/**
- * 字体图标点击复制
- */
-function fontClick() {
-  let fontItems = document.getElementsByClassName("icon-item");
-  for (let i = 0; i < fontItems.length; i++) {
-    fontItems[i].addEventListener("click", e => {
-      // 获取所点击的字体类名
-      let fontClassName = e.currentTarget.children[1].innerText;
-      if (!fontClassName) {
-        return;
-      }
-      // 复制数据到剪切板
-      const cInput = document.createElement('input');
-      cInput.value = fontClassName;
-      document.body.appendChild(cInput);
-      cInput.select() // 选取文本域内容;
-      // 执行浏览器复制命令
-      // 复制命令会将当前选中的内容复制到剪切板中（这里就是创建的input标签）
-      // Input要在正常的编辑状态下原生复制方法才会生效
-      document.execCommand('Copy')
-      // 复制成功后再将构造的标签 移除
-      cInput.remove();
-      // 提示复制成功
-      let tipDom = e.currentTarget.children[2];
-      tipDom.innerText = "已复制";
-      setTimeout(() => {
-        tipDom.innerText = "";
-      }, 1500);
-    });
   }
 }
 </script>

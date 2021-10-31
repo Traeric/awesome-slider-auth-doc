@@ -1,3 +1,5 @@
+@import "iconfont.css";
+
 .nav-bar-title {
     line-height: 25px !important;
 }
@@ -9,6 +11,10 @@
 
 .nav-bar {
     z-index: 2000 !important;
+}
+
+.nav-bar .nav {
+    margin-bottom: 5px !important;
 }
 
 .code-search-btn {
@@ -27,20 +33,56 @@
     font-size: 12px !important;
 }
 
-
 .code-search-bar {
-    height: 35px;
+    border-radius: 22px !important;
+    overflow: hidden;
+    border: 1px solid #cfd4db !important;
+    transition: border .5s !important;
+    margin-right: 20px !important;
+}
+
+.code-search-bar-focused {
+    border: 1px solid #3eaf7c !important;
+}
+
+.code-search-bar .code-search-words {
+    padding: 0 !important;
+
+}
+
+.code-search-bar .code-search-words li {
+    border-radius: 4px !important;
+    padding: 3px 10px !important;
+    margin: 0 5px !important;
+    font-weight: bolder;
+    color:rgb(93, 130, 166)
+}
+
+.code-search-bar .code-search-words li.focused {
+    color: #3eaf7c;
+}
+
+.code-search-bar .code-search-words li:first-child {
+    margin-top: 5px !important;
+}
+
+.code-search-bar .code-search-words li:last-child {
+    margin-bottom: 5px !important;
 }
 
 .code-search-bar .code-search-input {
-    line-height: 23px;
-    width: 0% !important;
-    padding: 0 !important;
+    float: right !important;
+    width: auto !important;
+    height: 29px !important;
 }
 
 .code-search-bar .code-search-btn {
-    line-height: 24px;
-    width: 100% !important;
+    background-color: transparent !important;
+    color: #aaa !important;
+    width: auto !important;
+    font-size: 14px !important;
+    padding-left: 10px !important;
+    padding-right: 0 !important;
 }
 
 .model-bind {
