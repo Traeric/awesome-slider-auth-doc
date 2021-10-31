@@ -47,7 +47,7 @@ export default {
       if (buttonList != null && buttonList != undefined && buttonList.length > 0) {
         buttonList[0].innerText = "";
         buttonList[0].classList.add("iconfont");
-        buttonList[0].classList.add("icon-sousuo");
+        buttonList[0].classList.add("icon-renzhengguanli");
       }
 
       let inputList = document.getElementsByClassName("code-search-input");
