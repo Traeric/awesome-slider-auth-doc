@@ -101,9 +101,9 @@
         <span class="icon-text">icon-renzhengshibai</span>
         <span class="tips"></span>
     </div>
-    <div class="icon-item">
-        <i class="iconfont"></i>
-        <span class="icon-text"></span>
+    <div class="icon-item" @click="fontClick">
+        <i class="iconfont icon-sousuo"></i>
+        <span class="icon-text">icon-sousuo</span>
         <span class="tips"></span>
     </div>
     <div class="icon-item">
