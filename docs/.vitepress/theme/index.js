@@ -1,6 +1,7 @@
 import CustomerTheme from 'vitepress/theme'
 import './customer.css'
 import './customer.js';
+import './iconfont.css';
 import startup from './startup';
 import Layout from './Layout.vue';
 import NotFound from "./NotFound.vue";
