@@ -20,7 +20,10 @@
     "vitepress": "^0.19.1"
   },
   "dependencies": {
-    "awesome-slider-auth": "^2.0.5",
-    "quick-plugin-md": "^0.1.2"
+    "awesome-slider-auth": "file:../awesome-slider-auth/awesome-slider-auth-2.0.4.tgz",
+    "quick-plugin-md": "^0.1.2",
+    "stylus": "^0.55.0",
+    "stylus-loader": "^6.2.0",
+    "vue": "^3.2.21"
   }
 }

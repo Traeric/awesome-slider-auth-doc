@@ -44,6 +44,7 @@ module.exports = {
                     children: [
                         { text: '滑动拼图认证', link: '/document/slider/puzzle_slider/' },
                         { text: '滑动滑块认证', link: '/document/slider/simple_slider/' },
+                        { text: '文字点选认证', link: '/document/slider/text_slider/' },
                     ] 
                 },
                 {
@@ -52,6 +53,7 @@ module.exports = {
                     children: [
                         {text: '按钮组件', link: '/document/ui/button/'},
                         {text: '字体图标', link: '/document/ui/font_icons/'},
+                        {text: 'Message消息提示', link: '/document/ui/message/'},
                     ]
                 },
             ]

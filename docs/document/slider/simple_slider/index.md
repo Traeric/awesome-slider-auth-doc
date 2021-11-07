@@ -34,7 +34,7 @@
 </CodeRun>
 
 ## 认证成功
-在用户认证成功后需要触发回调函数进行成功后的操作，awesome-slider-auth提供了`success`属性来执行认证成功后的回调。
+在用户认证成功后需要触发回调函数进行成功后的操作，模块提供了`success`属性来执行认证成功后的回调。
 
 <CodeRun auto editable="true">
 
