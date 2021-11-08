@@ -19,19 +19,27 @@
     </div>
 </template>
 <script lang="ts" setup>
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
 
 const codeRef = ref();
 let codeOpen = false;
+let codeAreaHeight = 0;
+
+onMounted(() => {
+    // 计算代码区域长度
+    codeAreaHeight = codeRef.value.offsetHeight;
+    // 隐藏代码区
+    codeRef.value.style.height = 0;
+});
 
 
 function openSourceCode() {
     if (codeOpen) {
         codeRef.value.style.borderTop = "none";
-        codeRef.value.style.maxHeight = "0";
+        codeRef.value.style.height = "0";
     } else {
         codeRef.value.style.borderTop = "1px solid #dcdfe6";
-        codeRef.value.style.maxHeight = "1000px";
+        codeRef.value.style.height = `${codeAreaHeight}px`;
     }
     codeOpen = !codeOpen;
 }
@@ -64,8 +72,7 @@ function openSourceCode() {
         padding 10px 20px
     .code
         background-color #f5f7fa
-        max-height 0
-        transition max-height 1s
+        transition height .5s
         pre
             margin 0
             display block
