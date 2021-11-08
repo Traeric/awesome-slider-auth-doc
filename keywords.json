@@ -168,5 +168,40 @@
                 "slug":"图标集合"
             }
         ]
+    },
+    "/document/ui/message/": {
+        "last":1629448061002,
+        "children":[
+            {
+                "level":2,
+                "title":"Message消息提示-基础用法",
+                "slug":"基础用法"
+            },
+            {
+                "level":2,
+                "title":"Message消息提示-不同风格",
+                "slug":"不同风格"
+            },
+            {
+                "level":2,
+                "title":"Message消息提示-不同类型",
+                "slug":"不同类型"
+            },
+            {
+                "level":2,
+                "title":"Message消息提示-关闭时间和关闭回调",
+                "slug":"关闭时间和关闭回调"
+            },
+            {
+                "level":3,
+                "title":"Message消息提示-API-属性",
+                "slug":"属性"
+            },
+            {
+                "level":3,
+                "title":"Message消息提示-API-事件",
+                "slug":"事件"
+            }
+        ]
     }
 }
