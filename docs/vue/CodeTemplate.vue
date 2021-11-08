@@ -12,34 +12,39 @@
             <slot name="show"></slot>
         </div>
         <div class="code" ref="codeRef">
-            <pre>
-                <slot name="code"></slot>
-            </pre>
+            <div ref="innerCodeRef" class="inner-code">
+                <hljsVuePlugin.component autodetect :code="code" />
+                <div class="code-origin" ref="codeOriginRef">
+                    <slot name="code"></slot>
+                </div>
+            </div>
         </div>
     </div>
 </template>
 <script lang="ts" setup>
 import { onMounted, ref } from "vue";
+import 'highlight.js/lib/common';
+import hljsVuePlugin from "@highlightjs/vue-plugin";
 
 const codeRef = ref();
+const codeOriginRef = ref();
+const innerCodeRef = ref();
+let code = ref('');
 let codeOpen = false;
-let codeAreaHeight = 0;
 
 onMounted(() => {
-    // 计算代码区域长度
-    codeAreaHeight = codeRef.value.offsetHeight;
-    // 隐藏代码区
-    codeRef.value.style.height = 0;
+    // 获取源代码
+    code.value = codeOriginRef.value.innerText;
 });
 
 
 function openSourceCode() {
     if (codeOpen) {
-        codeRef.value.style.borderTop = "none";
+        codeRef.value.style.borderTop = "1px solid transparent";
         codeRef.value.style.height = "0";
     } else {
         codeRef.value.style.borderTop = "1px solid #dcdfe6";
-        codeRef.value.style.height = `${codeAreaHeight}px`;
+        codeRef.value.style.height = `${innerCodeRef.value.offsetHeight}px`;
     }
     codeOpen = !codeOpen;
 }
@@ -73,7 +78,12 @@ function openSourceCode() {
     .code
         background-color #f5f7fa
         transition height .5s
-        pre
-            margin 0
-            display block
+        height 0
+        .code-origin
+            display none
+pre
+    margin 0
+    white-space pre-wrap
+    word-break break-all
+    font-size 18px
 </style>

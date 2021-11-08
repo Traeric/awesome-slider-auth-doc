@@ -25,25 +25,24 @@
         ]));
     }
 
-    let code = `
-        <template>
-            <as-button type="primary" @click="messageTip">测试</as-button>
-            <as-button type="warning" @click="messageVNode">VNode消息基础用法</as-button>
-        </template>
-        <script setup>
-            import {AsMessage} from "awesome-slider-auth";
-            import { h } from "vue";
-            
-            function messageTip() {
-                AsMessage("Message提示基础用法");
-            }
+    let code = 
+`<template>
+    <as-button type="primary" @click="messageTip">测试</as-button>
+    <as-button type="warning" @click="messageVNode">VNode消息基础用法</as-button>
+</template>
+<script setup>
+    import {AsMessage} from "awesome-slider-auth";
+    import { h } from "vue";
+    
+    function messageTip() {
+        AsMessage("Message提示基础用法");
+    }
 
-            function messageVNode() {
-                AsMessage(h('p', null, [
-                    h('span', null, 'Message消息支持 '),
-                    h('i', { style: 'color: teal' }, 'VNode'),
-                ]));
-            }
-        <\/script>
-    `;
+    function messageVNode() {
+        AsMessage(h('p', null, [
+            h('span', null, 'Message消息支持 '),
+            h('i', { style: 'color: teal' }, 'VNode'),
+        ]));
+    }
+<\/script>`;
 </script>

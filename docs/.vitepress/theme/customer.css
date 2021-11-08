@@ -150,3 +150,7 @@
 .icon-gather .icon-item i {
     margin-bottom: 10px;
 }
+
+code.hljs {
+    background: #f5f7fa !important
+}
