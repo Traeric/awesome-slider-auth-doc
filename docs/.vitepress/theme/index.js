@@ -6,8 +6,6 @@ import Layout from './Layout.vue';
 import NotFound from "./NotFound.vue";
 import "awesome-slider-auth/packages/Style/index.css";
 
-import 'highlight.js/styles/github.css'
-
 export default {
     // ...DefaultTheme,
     Layout,

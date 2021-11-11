@@ -13,7 +13,7 @@
         </div>
         <div class="code" ref="codeRef">
             <div ref="innerCodeRef" class="inner-code">
-                <hljsVuePlugin.component autodetect :code="code" />
+                <as-code-block :theme="props.theme" ref="asCodeBlockRef"></as-code-block>
                 <div class="code-origin" ref="codeOriginRef">
                     <slot name="code"></slot>
                 </div>
@@ -23,18 +23,26 @@
 </template>
 <script lang="ts" setup>
 import { onMounted, ref } from "vue";
-import 'highlight.js/lib/common';
-import hljsVuePlugin from "@highlightjs/vue-plugin";
+
+let props = defineProps({
+    theme: {
+        type: String,
+        default: 'light'
+    }
+});
 
 const codeRef = ref();
 const codeOriginRef = ref();
 const innerCodeRef = ref();
+const asCodeBlockRef = ref();
 let code = ref('');
 let codeOpen = false;
 
 onMounted(() => {
     // 获取源代码
     code.value = codeOriginRef.value.innerText;
+    // 格式化代码
+    asCodeBlockRef.value.formatCode(code.value);
 });
 
 

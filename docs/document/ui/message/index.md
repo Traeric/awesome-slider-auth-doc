@@ -17,10 +17,12 @@ import CloseMessage from "./CloseMessage.vue";
 <ElementMessage />
 ## 不同类型
 Message支持四种类型，分别是`info`、`success`、`warn`、`error`，通过`type`设置即可。
+
 <TypeMessage />
 
 ## 关闭时间和关闭回调
 Message的展示时间可以由`duration`控制，单位为ms，此外，在关闭时会触发一个回调函数`onClose`。
+
 <CloseMessage />
 
 ## API
