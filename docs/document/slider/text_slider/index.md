@@ -7,7 +7,7 @@
 
 ```vue
 <template>
-    <div class="wrap" style="width: 300px; margin-top: 50px;">
+    <div class="wrap" style="width: 300px;">
         <as-text-slider />
     </div>
 </template>
@@ -22,7 +22,7 @@
 
 ```vue
 <template>
-    <div class="wrap" style="width: 300px; margin-top: 50px;">
+    <div class="wrap" style="width: 300px;">
         <as-text-slider :refresh="refresh" />
     </div>
 </template>
@@ -56,7 +56,7 @@ export default {
 
 ```vue
 <template>
-    <div class="wrap" style="width: 300px; margin-top: 50px;">
+    <div class="wrap" style="width: 300px;">
         <as-text-slider :success="success" />
     </div>
     <div :style="{'color': flag ? '#67C23A' : '#409EFF', 'margin-top': '20px'}">{{ tips }}</div>

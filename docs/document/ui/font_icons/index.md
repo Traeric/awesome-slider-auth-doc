@@ -24,107 +24,88 @@
     <div class="icon-item" @click="fontClick">
         <i class="iconfont icon-shuaxin1"></i>
         <span class="icon-text">icon-shuaxin1</span>
-        <span class="tips"></span>
     </div>
     <div class="icon-item" @click="fontClick">
         <i class="iconfont icon-renzhengguanli"></i>
         <span class="icon-text">icon-renzhengguanli</span>
-        <span class="tips"></span>
     </div>
     <div class="icon-item" @click="fontClick">
         <i class="iconfont icon-tongyirenzheng-copy"></i>
         <span class="icon-text">icon-tongyirenzheng-copy</span>
-        <span class="tips"></span>
     </div>
     <div class="icon-item" @click="fontClick">
         <i class="iconfont icon-jiazaizhong"></i>
         <span class="icon-text">icon-jiazaizhong</span>
-        <span class="tips"></span>
     </div>
     <div class="icon-item" @click="fontClick">
         <i class="iconfont icon-jiazaizhong4"></i>
         <span class="icon-text">icon-jiazaizhong4</span>
-        <span class="tips"></span>
     </div>
     <div class="icon-item" @click="fontClick">
         <i class="iconfont icon-top"></i>
         <span class="icon-text">icon-top</span>
-        <span class="tips"></span>
     </div>
     <div class="icon-item" @click="fontClick">
         <i class="iconfont icon-zhifuchenggong"></i>
         <span class="icon-text">icon-zhifuchenggong</span>
-        <span class="tips"></span>
     </div>
     <div class="icon-item" @click="fontClick">
         <i class="iconfont icon-wancheng"></i>
         <span class="icon-text">icon-wancheng</span>
-        <span class="tips"></span>
     </div>
     <div class="icon-item" @click="fontClick">
         <i class="iconfont icon-star-circle"></i>
         <span class="icon-text">icon-star-circle</span>
-        <span class="tips"></span>
     </div>
     <div class="icon-item" @click="fontClick">
         <i class="iconfont icon-Star"></i>
         <span class="icon-text">icon-Star</span>
-        <span class="tips"></span>
     </div>
     <div class="icon-item" @click="fontClick">
         <i class="iconfont icon-shibai"></i>
         <span class="icon-text">icon-shibai</span>
-        <span class="tips"></span>
     </div>
     <div class="icon-item" @click="fontClick">
         <i class="iconfont icon-icon1"></i>
         <span class="icon-text">icon-icon1</span>
-        <span class="tips"></span>
     </div>
     <div class="icon-item" @click="fontClick">
         <i class="iconfont icon-icon"></i>
         <span class="icon-text">icon-icon</span>
-        <span class="tips"></span>
     </div>
     <div class="icon-item" @click="fontClick">
         <i class="iconfont icon-shibai1"></i>
         <span class="icon-text">icon-shibai1</span>
-        <span class="tips"></span>
     </div>
     <div class="icon-item" @click="fontClick">
         <i class="iconfont icon-zuobian"></i>
         <span class="icon-text">icon-zuobian</span>
-        <span class="tips"></span>
     </div>
     <div class="icon-item" @click="fontClick">
         <i class="iconfont icon-renzhengshibai"></i>
         <span class="icon-text">icon-renzhengshibai</span>
-        <span class="tips"></span>
     </div>
     <div class="icon-item" @click="fontClick">
         <i class="iconfont icon-sousuo"></i>
         <span class="icon-text">icon-sousuo</span>
-        <span class="tips"></span>
     </div>
     <div class="icon-item">
         <i class="iconfont"></i>
         <span class="icon-text"></span>
-        <span class="tips"></span>
     </div>
     <div class="icon-item">
         <i class="iconfont"></i>
         <span class="icon-text"></span>
-        <span class="tips"></span>
     </div>
     <div class="icon-item">
         <i class="iconfont"></i>
         <span class="icon-text"></span>
-        <span class="tips"></span>
     </div>
 </div>
 
 <script setup>
 import {ref} from "vue";
+import {AsMessage} from "awesome-slider-auth";
 /**
  * 字体图标点击复制
  */
@@ -147,10 +128,9 @@ function fontClick(e) {
     // 复制成功后再将构造的标签 移除
     cInput.remove();
     // 提示复制成功
-    let tipDom = e.currentTarget.children[2];
-    tipDom.innerText = "已复制";
-    setTimeout(() => {
-        tipDom.innerText = "";
-    }, 1500);
+    AsMessage({
+        message: `【${fontClassName}】复制成功`,
+        type: "success"
+    });
 }
 </script>

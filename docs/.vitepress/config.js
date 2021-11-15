@@ -11,7 +11,7 @@ module.exports = {
             'link',
             {
                 rel: 'icon',
-                href: '/awesome-slider-auth-doc/linktolink.png',//图片放在public文件夹下
+                href: '/linktolink.png',//图片放在public文件夹下
             },
         ],
     ],
@@ -45,6 +45,7 @@ module.exports = {
                         { text: '滑动拼图认证', link: '/document/slider/puzzle_slider/' },
                         { text: '滑动滑块认证', link: '/document/slider/simple_slider/' },
                         { text: '文字点选认证', link: '/document/slider/text_slider/' },
+                        { text: '图形旋转认证', link: '/document/slider/rotate_slider/' },
                     ] 
                 },
                 {

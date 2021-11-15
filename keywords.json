@@ -119,6 +119,41 @@
             }
         ]
     },
+    "/document/slider/rotate_slider/": {
+        "last":1629448061002,
+        "children":[
+            {
+                "level":2,
+                "title":"图形旋转认证-基础用法",
+                "slug":"基础用法"
+            },
+            {
+                "level":2,
+                "title":"图形旋转认证-自定义背景图片",
+                "slug":"自定义背景图片"
+            },
+            {
+                "level":2,
+                "title":"图形旋转认证-刷新频率以及认证误差",
+                "slug":"刷新频率以及认证误差"
+            },
+            {
+                "level":2,
+                "title":"图形旋转认证-认证成功",
+                "slug":"认证成功"
+            },
+            {
+                "level":3,
+                "title":"图形旋转认证-API-属性",
+                "slug":"属性"
+            },
+            {
+                "level":3,
+                "title":"图形旋转认证-API-事件",
+                "slug":"事件"
+            }
+        ]
+    },
     "/document/ui/button/": {
         "last":1629448061002,
         "children":[

@@ -7,7 +7,7 @@
 
 ```vue
 <template>
-    <div class="wrap" style="width: 300px; margin-top: 50px;">
+    <div class="wrap" style="width: 300px;">
         <as-simple-slider />
     </div>
 </template>
@@ -23,7 +23,7 @@
 
 ```vue
 <template>
-    <div class="wrap" style="width: 300px; margin-top: 50px;">
+    <div class="wrap" style="width: 300px;">
         <as-simple-slider 
         background="https://cn.bing.com/th?id=OHR.AtchafalayaMoss_ZH-CN6079994094_1920x1080.jpg&rf=LaDigue_1920x1080.jpg" 
         tips="通过自定义文字，可改变滑块的滑动的提示" />
@@ -40,7 +40,7 @@
 
 ```vue
 <template>
-    <div class="wrap" style="width: 300px; margin-top: 50px;">
+    <div class="wrap" style="width: 300px;">
         <as-simple-slider :success="success" />
     </div>
     <div :style="{'color': flag ? '#67C23A' : '#409EFF', 'margin-top': '20px'}">{{ tips }}</div>

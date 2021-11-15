@@ -7,7 +7,7 @@
 
 ```vue
 <template>
-    <div class="wrap" style="width: 350px; margin-top: 50px;">
+    <div class="wrap" style="width: 350px;">
         <as-puzzle-slider />
     </div>
 </template>
@@ -15,15 +15,43 @@
 
 </CodeRun>
 
+::: info 友情提示
+认证模块可以结合`as-auth-bar`标签一起使用，在认证成功的方法中回调`as-auth-bar`的`success`方法，能够获得更好的体验。
+:::
+
+<CodeRun auto editable>
+
+```vue
+<template>
+    <div class="wrap" style="width: 350px; margin-top: 50px;">
+        <as-auth-bar ref="authBarRef">
+            <as-puzzle-slider :success="success" />
+        </as-auth-bar>
+    </div>
+</template>
+
+<script>
+export default {
+    methods: {
+        success() {
+            this.$refs.authBarRef.success();
+        },
+    }
+}
+</script>
+```
+
+</CodeRun>
+
 ## 刷新频率以及认证误差
-- 如果认证失败后，滑块还自动归位，但是拼图和背景不会有任何改变，但是为了安全考虑，在错误次数超过限制后会调用refresh方法请求新的位置跟背景图片，默认的次数是`3`，如果想要自己设置，可以选择使用`refreshFrequency`参数设置
+- 如果认证失败后，滑块会自动归位，但是拼图和背景不会有任何改变，但是为了安全考虑，在错误次数超过限制后会调用refresh方法请求新的位置跟背景图片，默认的次数是`3`，如果想要自己设置，可以选择使用`refreshFrequency`参数设置
 - 当两个滑块之间满足一定距离时会认证成功，这个距离默认为`5px`，也可以选择使用`errorRange`参数设置。
 
 <CodeRun auto editable="true">
 
 ```vue
 <template>
-    <div class="wrap" style="width: 350px; margin-top: 50px;">
+    <div class="wrap" style="width: 350px;">
         <as-puzzle-slider :refreshFrequency="5" :errorRange="10" />
     </div>
 </template>
@@ -40,7 +68,7 @@
 
 ```vue
 <template>
-    <div class="wrap" style="width: 350px; margin-top: 50px;">
+    <div class="wrap" style="width: 350px;">
         <as-puzzle-slider :refresh="refresh" />
     </div>
 </template>
@@ -81,7 +109,7 @@ export default {
 
 ```vue
 <template>
-    <div class="wrap" style="width: 350px; margin-top: 50px;">
+    <div class="wrap" style="width: 350px;">
         <as-puzzle-slider :success="success" />
     </div>
     <div :style="{'color': flag ? '#67C23A' : '#409EFF', 'margin-top': '20px'}">{{ tips }}</div>
