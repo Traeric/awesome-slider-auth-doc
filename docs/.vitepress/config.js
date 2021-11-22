@@ -2,7 +2,7 @@
 module.exports = {
     title: "Awesome Slider Auth",// 网站标题
     description: 'AwesomeSliderAuth组件库说明文档', //网站描述
-    base: '/awesome-slider-auth-doc/', //  部署时的路径 默认 /  可以使用二级地址 /base/
+    base: '/', //  部署时的路径 默认 /  可以使用二级地址 /base/
     // lang: 'en-US', //语言
     repo: 'vuejs/vitepress',
     head: [
@@ -46,6 +46,7 @@ module.exports = {
                         { text: '滑动滑块认证', link: '/document/slider/simple_slider/' },
                         { text: '文字点选认证', link: '/document/slider/text_slider/' },
                         { text: '图形旋转认证', link: '/document/slider/rotate_slider/' },
+                        { text: '图片验证码认证', link: '/document/slider/picture_captcha/' },
                     ] 
                 },
                 {
