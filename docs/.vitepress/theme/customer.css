@@ -71,12 +71,6 @@
     padding-right: 0 !important;
 }
 
-.model-bind {
-    border: 1px solid #dcdfe6;
-    padding: 10px 12px;
-    border-radius: 4px;
-}
-
 .model-bind .as-row {
     margin: 20px 0 20px 0;
 }
@@ -142,3 +136,44 @@
 code.hljs {
     background: #f5f7fa !important
 }
+
+/* 代码块样式 */
+.lib-code-run {
+    border: 1px solid #dcdfe6;
+    border-radius: 5px;
+}
+
+.lib-code-run .tools {
+    border-bottom: 1px solid #dcdfe6;
+    margin-bottom: 0 !important;
+    padding: 10px 15px;
+}
+
+.lib-code-run .tools i {
+    background-color: transparent;
+    color: #409eff;
+    font-size: 20px !important;
+}
+
+.lib-code-run .tools i:hover {
+    color: #79bbff;
+}
+
+.lib-code-run .model-bind {
+    padding: 10px 15px;
+}
+
+.lib-code-run .code {
+    border: none !important;
+    outline: none;
+    background-color: transparent;
+    border-radius: 0 0 5px 5px !important;
+    overflow-y: hidden !important;
+}
+
+.lib-code-run .language-vue {
+    margin: 0 !important;
+    border-radius: 0 !important;
+}
+
+

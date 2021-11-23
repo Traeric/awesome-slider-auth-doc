@@ -158,3 +158,13 @@
 | loading    | 是否加载 | Boolean | | true \| false |
 | round    | 是否圆角 | Boolean | | true \| false |
 | size  | 按钮大小 | Stirng | normal | mini \| small \| normal |
+
+<script setup>
+    import {onMounted} from "vue";
+    import {initPage} from "../../../.vitepress/theme/customer";
+
+
+    onMounted(() => {
+        initPage();
+    });
+</script>

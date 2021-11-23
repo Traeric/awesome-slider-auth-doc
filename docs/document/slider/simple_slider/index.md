@@ -78,3 +78,13 @@ export default {
 | 事件名  | 说明             | 返回值 |
 | ------- | ---------------- | ------ |
 | success | 滑块认证成功触发 | - |
+
+<script setup>
+    import {onMounted} from "vue";
+    import {initPage} from "../../../.vitepress/theme/customer";
+
+
+    onMounted(() => {
+        initPage();
+    });
+</script>

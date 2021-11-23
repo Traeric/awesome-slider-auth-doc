@@ -109,3 +109,13 @@ export default {
 | refresh | 刷新方法，可传入刷新的数据以及颜色 | -   |
 | module.auth | 认证方法 | `true` \| `false` |
 | module.refresh | 刷新验证码 | - |
+
+<script setup>
+    import {onMounted} from "vue";
+    import {initPage} from "../../../.vitepress/theme/customer";
+
+
+    onMounted(() => {
+        initPage();
+    });
+</script>

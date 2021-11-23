@@ -104,12 +104,18 @@
 </div>
 
 <script setup>
-import {ref} from "vue";
+import {ref, onMounted} from "vue";
 import {AsMessage} from "awesome-slider-auth";
+import {initPage} from "../../../.vitepress/theme/customer";
+
+
+onMounted(() => {
+    initPage();
+});
+
 /**
  * 字体图标点击复制
  */
-
 function fontClick(e) {
     // 获取所点击的字体类名
     let fontClassName = e.currentTarget.children[1].innerText;

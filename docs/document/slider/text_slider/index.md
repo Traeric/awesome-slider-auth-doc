@@ -89,3 +89,13 @@ export default {
 | ------- | ---------------- | ------ | ------ |
 | success | 滑块认证成功触发 | - | |
 | refresh | 滑块认证失败时触发 | - | callback：获取到需要刷新的数据，通过该回调方法传入 |
+
+<script setup>
+    import {onMounted} from "vue";
+    import {initPage} from "../../../.vitepress/theme/customer";
+
+
+    onMounted(() => {
+        initPage();
+    });
+</script>

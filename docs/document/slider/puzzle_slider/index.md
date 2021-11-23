@@ -149,3 +149,14 @@ export default {
 | ------- | ---------------- | ------ |
 | refresh | 滑块认证失败或点击刷新按钮触发 | -   |
 | success | 滑块认证成功触发 | - |
+
+
+<script setup>
+    import {onMounted} from "vue";
+    import {initPage} from "../../../.vitepress/theme/customer";
+
+
+    onMounted(() => {
+        initPage();
+    });
+</script>
