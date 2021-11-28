@@ -1,14 +1,14 @@
-# 文字点选认证
-当点击登录或注册时，按照提示按顺序点击图中文字完成认证。
+# 移动拼图认证
+当点击登录或注册时，按照将打乱的图片移动组成完整的图片完成认证。
 ## 基础用法
-在需要用到文字点选认证的地方添加相关标签即可，滑块的宽度可自适应父级标签。
+在需要用到移动拼图认证的地方添加相关标签即可，滑块的宽度可自适应父级标签。
 
-<CodeRun auto editable>
+<CodeRun auto>
 
 ```vue
 <template>
     <div class="wrap" style="width: 300px;">
-        <as-text-slider />
+        <as-jigsaw-slider />
     </div>
 </template>
 ```
@@ -16,7 +16,7 @@
 </CodeRun>
 
 ## 自定义背景图片
-点选模块的背景有一个默认值，如果不想使用该默认值可以自己替换，通过`refresh`方法传递即可完成。
+拼图模块有一个默认背景，如果不想使用该默认背景可以自己替换，通过`refresh`方法传递即可完成。
 ::: warning 提示
 在认证失败的时也会触发`refresh`方法更换背景。
 :::
@@ -26,7 +26,7 @@
 ```vue
 <template>
     <div class="wrap" style="width: 300px;">
-        <as-text-slider :refresh="refresh" />
+        <as-jigsaw-slider :refresh="refresh" />
     </div>
 </template>
 
@@ -64,23 +64,19 @@ export default {
 ```vue
 <template>
     <div class="wrap" style="width: 300px;">
-        <as-text-slider :success="success" />
+        <as-jigsaw-slider :success="success" />
     </div>
-    <div :style="{'color': flag ? '#67C23A' : '#409EFF', 'margin-top': '20px'}">{{ tips }}</div>
 </template>
 
 <script>
 export default {
     methods: {
         success() {
-            this.flag = true;
-            this.tips = "认证成功";
-        }
-    },
-    data() {
-        return {
-            flag: false,
-            tips: "滑动认证",
+            this.$as_message({
+                message: "认证成功",
+                type: "success",
+                elementLike: true
+            });
         }
     },
 }

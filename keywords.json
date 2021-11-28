@@ -154,6 +154,56 @@
             }
         ]
     },
+    "/document/slider/picture_captcha/": {
+        "last":1629448061002,
+        "children":[
+            {
+                "level":2,
+                "title":"图片验证码认证-基础用法",
+                "slug":"基础用法"
+            },
+            {
+                "level":2,
+                "title":"图片验证码认证-自定义文字及颜色",
+                "slug":"自定义文字及颜色"
+            },
+            {
+                "level":2,
+                "title":"图片验证码认证-认证",
+                "slug":"认证"
+            },
+            {
+                "level":3,
+                "title":"图片验证码认证-API-事件",
+                "slug":"事件"
+            }
+        ]
+    },
+    "/document/slider/jigsaw_slider/": {
+        "last":1629448061002,
+        "children":[
+            {
+                "level":2,
+                "title":"移动拼图认证-基础用法",
+                "slug":"基础用法"
+            },
+            {
+                "level":2,
+                "title":"移动拼图认证-自定义背景图片",
+                "slug":"自定义背景图片"
+            },
+            {
+                "level":2,
+                "title":"移动拼图认证-认证成功",
+                "slug":"认证成功"
+            },
+            {
+                "level":3,
+                "title":"移动拼图认证-API-事件",
+                "slug":"事件"
+            }
+        ]
+    },
     "/document/ui/button/": {
         "last":1629448061002,
         "children":[
@@ -236,6 +286,26 @@
                 "level":3,
                 "title":"Message消息提示-API-事件",
                 "slug":"事件"
+            }
+        ]
+    },
+    "/document/ui/back_top/": {
+        "last":1629448061002,
+        "children":[
+            {
+                "level":2,
+                "title":"回到顶部-基础用法",
+                "slug":"基础用法"
+            },
+            {
+                "level":2,
+                "title":"回到顶部-自定义内容",
+                "slug":"自定义内容"
+            },
+            {
+                "level":3,
+                "title":"回到顶部-API-属性",
+                "slug":"属性"
             }
         ]
     }

@@ -38,7 +38,7 @@ module.exports = {
             '/document/': [
                 { text: '安装', link: '/document/' },
                 { text: '快速开始', link: '/document/quick_start/' },
-                { 
+                {
                     text: '人机校验',
                     collapsable: false,
                     children: [
@@ -47,7 +47,8 @@ module.exports = {
                         { text: '文字点选认证', link: '/document/slider/text_slider/' },
                         { text: '图形旋转认证', link: '/document/slider/rotate_slider/' },
                         { text: '图片验证码认证', link: '/document/slider/picture_captcha/' },
-                    ] 
+                        { text: '移动拼图认证', link: '/document/slider/jigsaw_slider/' },
+                    ]
                 },
                 {
                     text: 'UI组件',
@@ -56,6 +57,7 @@ module.exports = {
                         {text: '按钮组件', link: '/document/ui/button/'},
                         {text: '字体图标', link: '/document/ui/font_icons/'},
                         {text: 'Message消息提示', link: '/document/ui/message/'},
+                        {text: '回到顶部', link: '/document/ui/back_top/'},
                     ]
                 },
             ]

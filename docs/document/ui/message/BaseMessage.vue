@@ -25,7 +25,7 @@
         ]));
     }
 
-    let code = 
+    let code =
 `<template>
     <as-button type="primary" @click="messageTip">测试</as-button>
     <as-button type="warning" @click="messageVNode">VNode消息基础用法</as-button>
@@ -33,7 +33,7 @@
 <script setup>
     import {AsMessage} from "awesome-slider-auth";
     import { h } from "vue";
-    
+
     function messageTip() {
         AsMessage("Message提示基础用法");
     }
