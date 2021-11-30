@@ -133,10 +133,6 @@
     margin-bottom: 10px;
 }
 
-code.hljs {
-    background: #f5f7fa !important
-}
-
 /* 代码块样式 */
 .lib-code-run {
     border: 1px solid #dcdfe6;
@@ -164,8 +160,10 @@ code.hljs {
 }
 
 .lib-code-run .code {
-    border: none !important;
-    outline: none;
+    border-top-style: solid !important;
+    border-top-color: #dcdfe6 !important;
+    border-top-width: 0;
+    outline: none !important;
     background-color: transparent;
     border-radius: 0 0 5px 5px !important;
     overflow-y: hidden !important;
@@ -174,6 +172,73 @@ code.hljs {
 .lib-code-run .language-vue {
     margin: 0 !important;
     border-radius: 0 !important;
+}
+
+.language-vue {
+    background-color: #f5f7fa !important;
+    color: #000 !important;
+}
+
+.language-vue code {
+    background-color: transparent;
+    color: #000 !important;
+}
+
+.line-numbers-wrapper {
+    border-right-color: #c0c4cc !important;
+}
+
+.line-numbers-wrapper .line-number {
+    color: #c0c4cc !important;
+}
+
+/* 代码样式 */
+.language-vue .punctuation {
+    color: #9999a6 !important;
+}
+
+.language-vue .tag {
+    color: #fa6822 !important;
+}
+
+.language-vue .attr-name {
+    color: #0b8235 !important;
+}
+
+.language-vue .attr-value {
+    color: #008dff !important;
+}
+
+.language-vue .attr-equals {
+    color: #999 !important;
+}
+
+.language-vue .language-css .property {
+    color: #f81d62 !important;
+}
+
+.language-vue .language-javascript {
+    color: #000 !important;
+}
+
+.language-vue .language-javascript .keyword {
+    color: #008dff !important;
+}
+
+.language-vue .language-javascript .function {
+    color: #f91d22 !important;
+}
+
+.language-vue .language-javascript .string {
+    color: #0b8235 !important;
+}
+
+.language-vue .language-javascript .punctuation {
+    color: #999 !important;
+}
+
+.language-vue .language-javascript .operator {
+    color: #0b8235 !important;
 }
 
 

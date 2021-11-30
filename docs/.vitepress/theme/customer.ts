@@ -32,16 +32,23 @@ function initPage() {
         iDom.setAttribute("title", "查看源码")
         tools.appendChild(iDom);
         // 关闭代码面板
-        let editDom = element.querySelector(".code");
-        (<HTMLDivElement>editDom).style.height = "0";
-        (<HTMLDivElement>editDom).style.transition = "height .5s";
+        let codeDom = element.querySelector(".code");
+        codeDom.classList.remove("edit");
+        (<HTMLDivElement>codeDom).style.height = "0";
+        (<HTMLDivElement>codeDom).style.transition = "height .5s";
         // 为展开代码按钮绑定事件
         let close = true;
         iDom.addEventListener("click", () => {
             if (close) {
-                (<HTMLDivElement>editDom).style.height = (<HTMLDivElement>element.querySelector(".language-vue")).offsetHeight + 'px';
+                (<HTMLDivElement>codeDom).style.height = (<HTMLDivElement>element.querySelector(".language-vue")).offsetHeight + 'px';
+                // 增加border
+                (<HTMLDivElement>codeDom).style.borderTopWidth = "1px";
             } else {
-                (<HTMLDivElement>editDom).style.height = '0';
+                (<HTMLDivElement>codeDom).style.height = '0';
+                setTimeout(() => {
+                    // 删除border
+                    (<HTMLDivElement>codeDom).style.borderTopWidth = "0";
+                }, 400);
             }
             close = !close;
         });
