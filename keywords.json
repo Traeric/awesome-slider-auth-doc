@@ -204,6 +204,31 @@
             }
         ]
     },
+    "/document/slider/scratch_slider/": {
+        "last":1629448061002,
+        "children":[
+            {
+                "level":2,
+                "title":"刮刮卡认证-基础用法",
+                "slug":"基础用法"
+            },
+            {
+                "level":2,
+                "title":"刮刮卡认证-自定义背景图片",
+                "slug":"自定义背景图片"
+            },
+            {
+                "level":2,
+                "title":"刮刮卡认证-认证成功",
+                "slug":"认证成功"
+            },
+            {
+                "level":3,
+                "title":"刮刮卡认证-API-事件",
+                "slug":"事件"
+            }
+        ]
+    },
     "/document/ui/button/": {
         "last":1629448061002,
         "children":[
