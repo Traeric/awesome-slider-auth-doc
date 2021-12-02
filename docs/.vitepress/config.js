@@ -48,6 +48,7 @@ module.exports = {
                         { text: '图形旋转认证', link: '/document/slider/rotate_slider/' },
                         { text: '图片验证码认证', link: '/document/slider/picture_captcha/' },
                         { text: '移动拼图认证', link: '/document/slider/jigsaw_slider/' },
+                        { text: '刮刮卡认证', link: '/document/slider/scratch_slider/' },
                     ]
                 },
                 {
