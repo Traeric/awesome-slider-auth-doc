@@ -66,6 +66,5 @@ module.exports = {
     },
     markdown: {
         lineNumbers: true,
-        theme: "light"
     }
 }
