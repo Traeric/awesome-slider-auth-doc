@@ -23,11 +23,11 @@
         <as-button type="negative" plain>消极按钮</as-button>
     </div>
     <div class="as-row">
-        <as-button circle>默认按钮</as-button>
-        <as-button type="primary" circle>常规按钮</as-button>
-        <as-button type="positive" circle>积极按钮</as-button>
-        <as-button type="warning" circle>警告按钮</as-button>
-        <as-button type="negative" circle>消极按钮</as-button>
+        <as-button circle prefix-icon="star"></as-button>
+        <as-button type="primary" circle prefix-icon="star"></as-button>
+        <as-button type="positive" circle prefix-icon="star"></as-button>
+        <as-button type="warning" circle prefix-icon="star"></as-button>
+        <as-button type="negative" circle prefix-icon="star"></as-button>
     </div>
     <div class="as-row">
         <as-button round>默认按钮</as-button>
@@ -42,32 +42,32 @@
 </CodeRun>
 
 ## 图标按钮
-通过给按钮设置图标可以赋予按钮不同的意义，图标支持显示在前面和后面，分别通过`prefix-icon`和`suffix-icon`配置，可配置的值可查看[字体图标](/document/ui/font_icons/)章节。
+通过给按钮设置图标可以赋予按钮不同的意义，图标支持显示在前面和后面，分别通过`prefix-icon`和`suffix-icon`配置，可配置的值可查看[字体图标](/document/ui/svg_icons/)章节。
 
 <CodeRun auto editable>
 
 ```vue
 <template>
     <div class="as-row">
-        <as-button prefix-icon="icon-Star">默认按钮</as-button>
-        <as-button type="primary" prefix-icon="icon-icon1">常规按钮</as-button>
-        <as-button type="positive" prefix-icon="icon-renzhengshibai">积极按钮</as-button>
-        <as-button type="warning" prefix-icon="icon-star-circle">警告按钮</as-button>
-        <as-button type="negative" prefix-icon="icon-zuobian">消极按钮</as-button>
+        <as-button prefix-icon="search">默认按钮</as-button>
+        <as-button type="primary" prefix-icon="search">常规按钮</as-button>
+        <as-button type="positive" prefix-icon="search">积极按钮</as-button>
+        <as-button type="warning" prefix-icon="search">警告按钮</as-button>
+        <as-button type="negative" prefix-icon="search">消极按钮</as-button>
     </div>
     <div class="as-row">
-        <as-button suffix-icon="icon-wancheng">默认按钮</as-button>
-        <as-button type="primary" suffix-icon="icon-chenggong">常规按钮</as-button>
-        <as-button type="positive" suffix-icon="icon-zhifuchenggong">积极按钮</as-button>
-        <as-button type="warning" suffix-icon="icon-zuobian">警告按钮</as-button>
-        <as-button type="negative" suffix-icon="icon-jiazaizhong">消极按钮</as-button>
+        <as-button suffix-icon="search">默认按钮</as-button>
+        <as-button type="primary" suffix-icon="search">常规按钮</as-button>
+        <as-button type="positive" suffix-icon="search">积极按钮</as-button>
+        <as-button type="warning" suffix-icon="search">警告按钮</as-button>
+        <as-button type="negative" suffix-icon="search">消极按钮</as-button>
     </div>
     <div class="as-row">
-        <as-button suffix-icon="icon-wancheng"></as-button>
-        <as-button type="primary" suffix-icon="icon-chenggong"></as-button>
-        <as-button type="positive" suffix-icon="icon-zhifuchenggong"></as-button>
-        <as-button type="warning" suffix-icon="icon-zuobian"></as-button>
-        <as-button type="negative" suffix-icon="icon-jiazaizhong"></as-button>
+        <as-button prefix-icon="search"></as-button>
+        <as-button type="primary" prefix-icon="search"></as-button>
+        <as-button type="positive" prefix-icon="search"></as-button>
+        <as-button type="warning" prefix-icon="search"></as-button>
+        <as-button type="negative" prefix-icon="search"></as-button>
     </div>
 </template>
 ```
@@ -77,7 +77,7 @@
 ## 禁用按钮
 如果在某些情况下希望按钮不可用，可以设置`disabled`属性让按钮处于禁用状态。
 ::: danger 提示
-此禁用仅仅只是按钮样式的禁用，不能禁用按钮事件。
+该属性会禁用按钮的点击事件。
 :::
 
 <CodeRun auto editable>
@@ -99,7 +99,7 @@
 ## 加载按钮
 在点进按钮发送请求后，如果希望按钮处于等待状态，可以设置`loading`属性让按钮处于等待状态。
 ::: danger 提示
-这仅仅是按钮样式的改变，如果在等待的过程中不希望按钮事件触发，请自行禁用。
+该属性会禁用按钮的点击事件。
 :::
 
 <CodeRun auto editable>
@@ -136,9 +136,9 @@
         <as-button type="warning" size="normal" round>警告按钮</as-button>
     </div>
     <div class="as-row">
-        <as-button type="primary" size="mini" circle>常规按钮</as-button>
-        <as-button type="positive" size="small" circle>积极按钮</as-button>
-        <as-button type="warning" size="normal" circle>警告按钮</as-button>
+        <as-button type="primary" size="mini" circle prefix-icon="search"></as-button>
+        <as-button type="positive" size="small" circle prefix-icon="search"></as-button>
+        <as-button type="warning" size="normal" circle prefix-icon="search"></as-button>
     </div>
 </template>
 ```

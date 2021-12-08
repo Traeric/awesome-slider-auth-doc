@@ -6,14 +6,14 @@ function initPage() {
     for (let i = 0; i < doIcon.length; i++) {
         let element = doIcon[i];
         element.classList.add("iconfont");
-        element.classList.add("icon-zhihang");
+        element.classList.add("icon-execute");
         element.innerHTML = "";
     }
     // 增加重置代码
     for (let i = 0; i < unDoIcon.length; i++) {
         let element = unDoIcon[i];
         element.classList.add("iconfont");
-        element.classList.add("icon-zhongxinzhihang1");
+        element.classList.add("icon-restart");
         element.innerHTML = "";
     }
 

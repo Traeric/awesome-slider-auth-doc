@@ -1,3 +1,5 @@
+@import "./fonts/iconfont.css";
+
 .nav-bar-title {
     line-height: 25px !important;
 }
@@ -110,12 +112,13 @@
 }
 
 .icon-gather .icon-item:hover {
+    transition: all .5s;
     color: #3eaf7c;
     background-color: rgba(62, 175, 124, .1);
 }
 
-.icon-gather .icon-item i {
-    font-size: 22px;
+.icon-gather .icon-item:hover .asa-icon {
+    color: #3eaf7c;
 }
 
 .icon-gather .icon-item .tips {
@@ -127,6 +130,7 @@
 .icon-gather .icon-item .icon-text {
     width: 100px;
     text-align: center;
+    margin-top: 10px;
 }
 
 .icon-gather .icon-item i {
@@ -241,4 +245,12 @@
     color: #0b8235 !important;
 }
 
+.message-icon {
+    box-sizing: unset !important;
+}
 
+.icon-item .asa-icon {
+    width: 24px;
+    height: 24px;
+    color: #606266;
+}

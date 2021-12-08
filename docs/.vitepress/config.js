@@ -56,7 +56,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         {text: '按钮组件', link: '/document/ui/button/'},
-                        {text: '字体图标', link: '/document/ui/font_icons/'},
+                        {text: 'svg图标', link: '/document/ui/svg_icons/'},
                         {text: 'Message消息提示', link: '/document/ui/message/'},
                         {text: '回到顶部', link: '/document/ui/back_top/'},
                     ]
